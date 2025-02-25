@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>How Many Days Old are You?</title>
+  <link rel="stylesheet" type="text/css" href="skeleton.css">
+</head>
+<body>
+  <h1>Age Statistics</h1>
+  <form id="f1" action="javascript:;" onsubmit="newPerson(this)">
+    <input type="text" name="firstName" placeholder="First Name:">
+    <input type="text" name="lastName" placeholder="Last Name:">
+    <input type="date" name="date">
+    <input type="submit" value="New">
+  </form>
+  <form id="f2" action="javascript:;" onchange="changeTimeZone(this)">
+    <span>Time Zone:</span>
+    <select name="timeZone">
+      <option value="GMT-1200">UTC-12</option>
+      <option value="GMT-1100">UTC-11</option>
+      <option value="GMT-1000">UTC-10</option>
+      <option value="GMT-900">UTC-9</option>
+      <option value="GMT-800">UTC-8</option>
+      <option value="GMT-700">UTC-7</option>
+      <option value="GMT-600">UTC-6</option>
+      <option value="GMT-500">UTC-5</option>
+      <option value="GMT-400">UTC-4</option>
+      <option value="GMT-300">UTC-3</option>
+      <option value="GMT-200">UTC-2</option>
+      <option value="GMT-100">UTC-1</option>
+      <option value="" selected>UTC</option>
+      <option value="GMT+100">UTC+1</option>
+      <option value="GMT+200">UTC+2</option>
+      <option value="GMT+300">UTC+3</option>
+      <option value="GMT+400">UTC+4</option>
+      <option value="GMT+500">UTC+5</option>
+      <option value="GMT+600">UTC+6</option>
+      <option value="GMT+700">UTC+7</option>
+      <option value="GMT+800">UTC+8</option>
+      <option value="GMT+900">UTC+9</option>
+      <option value="GMT+1000">UTC+10</option>
+      <option value="GMT+1100">UTC+11</option>
+      <option value="GMT+1200">UTC+12</option>
+    </select>
+  </form>
+  <div id="error"></div>
+  <div id="output"></div>
+</body>
+  <script type="text/javascript" src="vue2.2.10.js"></script>
+  <!-- <script type="text/javascript" src="../shared/jquery-3.1.1.min.js"></script> -->
+  <script type="text/javascript" src="days.js"></script>
+</html>
